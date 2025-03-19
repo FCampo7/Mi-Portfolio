@@ -16,7 +16,8 @@ header {
 	padding: 0px 10px;
 	display: flex;
 	align-items: center;
-	position: fixed;
+	position: sticky;
+	top: 0;
 	width: 100%;
 	z-index: 1000;
 }
@@ -74,6 +75,35 @@ main {
 	width: 70%;
 }
 
+/* Sección Hero */
+.hero {
+	min-height: 100vh;
+	background: linear-gradient(135deg, #fff 0%, #f0f0ff 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 1rem;
+}
+
+.hero-content {
+	max-width: 800px;
+}
+
+.hero-content h1 {
+	font-size: 4rem;
+	margin-bottom: 1.5rem;
+	color: var(--secondary-color);
+	line-height: 1.2;
+	font-weight: 800;
+}
+
+.hero-content p {
+	font-size: 1.8rem;
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
 /* About */
 
 #about {
@@ -102,8 +132,13 @@ main {
 	box-shadow: #333 0 0 10px;
 }
 
+/* Skills */
 #skills {
-	font-size: 32px;
+	padding-top: 3rem;
+}
+
+#skills div {
+	font-size: 48px;
 }
 
 /* Projects */

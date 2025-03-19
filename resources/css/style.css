@@ -99,6 +99,7 @@ main {
 	border-radius: 100%;
 	border-bottom: 5px solid #333;
 	border-right: 3px solid #333;
+	box-shadow: #333 0 0 10px;
 }
 
 #skills {

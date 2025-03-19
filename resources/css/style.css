@@ -1,0 +1,184 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	justify-self: center;
+}
+
+/* Header */
+
+header {
+	background-color: #333;
+	color: white;
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+header h1 {
+	font-size: 24px;
+	margin-left: 5px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1 a {
+	color: white;
+	text-decoration: none;
+}
+
+header nav {
+	background-color: #333;
+	color: white;
+	padding: 5px;
+	margin-left: auto;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+header nav a:hover {
+	color: #ccc;
+	border-bottom: 3px solid #ccc;
+}
+
+header button {
+	background-color: #333;
+	color: white;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+header button:hover {
+	background-color: #ccc;
+	color: black;
+	cursor: pointer;
+}
+
+/* Main */
+
+main {
+	padding: 20px;
+	justify-self: center;
+	width: 70%;
+}
+
+/* About */
+
+#about {
+	padding-top: 3rem;
+}
+
+.about-container {
+	display: flex;
+}
+
+.about-text {
+	padding-right: 5px;
+	flex: 4;
+}
+
+.about-img {
+	flex: 1;
+	padding-left: 5px;
+	align-self: center;
+}
+
+.about-img img {
+	border-radius: 100%;
+	border-bottom: 5px solid #333;
+	border-right: 3px solid #333;
+}
+
+#skills {
+	font-size: 32px;
+}
+
+/* Projects */
+
+#projects {
+	padding-top: 3rem;
+}
+
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project {
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	max-width: 320px;
+	min-height: 400px;
+}
+
+.project:hover {
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in;
+	box-shadow: 0 0 10px #333;
+}
+
+.project img {
+	width: 100%;
+	border: #333 1px solid;
+	border-radius: 5px;
+	align-self: center;
+}
+
+.project img:active {
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in;
+	transform: scale(2);
+}
+
+.project h3 {
+	border-top: #333 1px solid;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.project i {
+	color: black;
+	font-size: 28px;
+}
+
+.project i:hover {
+	color: #333;
+	cursor: pointer;
+}
+
+/* Footer */
+
+#contact {
+	padding: 20px;
+	padding-top: 1rem;
+	background-color: #eee;
+	justify-items: center;
+}
+
+#contact div a {
+	text-decoration: none;
+	color: black;
+}
+
+#contact div a:hover {
+	color: #333;
+}
+
+#contact div i {
+	font-size: 28px;
+}

@@ -93,14 +93,12 @@ main {
 .hero-content h1 {
 	font-size: 4rem;
 	margin-bottom: 1.5rem;
-	color: var(--secondary-color);
 	line-height: 1.2;
 	font-weight: 800;
 }
 
 .hero-content p {
 	font-size: 1.8rem;
-	color: var(--primary-color);
 	font-weight: 500;
 }
 

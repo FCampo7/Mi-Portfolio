@@ -2,10 +2,13 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	background-color: white;
+	color: #2d336b;
 }
 
 h2 {
 	justify-self: center;
+	color: #222;
 }
 
 /* Header */
@@ -96,6 +99,7 @@ main {
 	margin-bottom: 1.5rem;
 	line-height: 1.2;
 	font-weight: 800;
+	color: #fe4f2d;
 }
 
 .hero-content p {
@@ -159,6 +163,7 @@ main {
 	margin: 10px;
 	max-width: 320px;
 	min-height: 400px;
+	background: linear-gradient(135deg, #fff 0%, #f0f0ff 100%);
 }
 
 .project:hover {

@@ -181,7 +181,7 @@ main {
     cursor: zoom-in;
 }
 
-project img:active {
+.project img:active {
     transition-duration: 0.25s;
     transition-timing-function: ease-in;
     transform: scale(2);

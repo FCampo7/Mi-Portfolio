@@ -10,7 +10,7 @@
 	--tertiary: #e3e3e3;
 
 	--accent: #939cb1;
-	--bg-soft: #2b2929;
+	--bg-soft: #212020;
 }
 
 * {
@@ -38,13 +38,13 @@ h2 {
 .montserrat-h1 {
 	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 100;
+	font-weight: 800;
 	font-style: normal;
 }
 
 /* Header */
 
-header {
+#header {
 	background-color: #374151; /* Cambiado a gris oscuro suave */
 	color: var(--text);
 	padding: 5px;
@@ -55,35 +55,36 @@ header {
 	z-index: 1000;
 }
 
-header h1 {
+#header h1 {
 	font-size: 24px;
 	margin-left: 5px;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header h1 a {
+#header h1 a {
 	color: var(--text);
 	text-decoration: none;
+	font-weight: 800;
 }
 
-header nav {
+#header nav {
 	background-color: #374151; /* Cambiado a gris oscuro suave */
 	color: var(--text);
 	padding: 5px;
 	margin-left: auto;
 }
 
-header nav a {
+#header nav a {
 	color: var(--text);
 	text-decoration: none;
 	padding: 10px;
+	font-weight: 500;
 }
 
-header nav a:hover {
+#header nav a:hover {
 	border-bottom: 3px solid var(--tertiary);
 }
 
-header button {
+#header button {
 	background-color: var(--primary); /* Cambiado a azul índigo */
 	color: white;
 	border: 1px solid white;
@@ -93,7 +94,7 @@ header button {
 	font-weight: bold;
 }
 
-header button:hover {
+#header button:hover {
 	background-color: var(--tertiary); /* Cambiado a azul violeta */
 	cursor: pointer;
 	color: #000000;
@@ -118,7 +119,6 @@ header button:hover {
 	font-size: 4rem;
 	margin-bottom: 1.5rem;
 	line-height: 1.2;
-	font-weight: 800;
 	color: whitesmoke;
 }
 
@@ -209,7 +209,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100%;
+	max-width: 400px;
 }
 
 .project:hover {
@@ -247,10 +247,11 @@ main {
 }
 
 .project h3 {
-	border-bottom: var(--accent) 1px solid; /* Cambiado a gris oscuro suave */
 	padding-top: 10px;
-	text-align: center;
 	flex: 1;
+	text-align: center;
+	font-weight: 600;
+	border-bottom: var(--accent) 1px solid; /* Cambiado a gris oscuro suave */
 }
 
 .project p {

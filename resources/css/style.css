@@ -10,6 +10,7 @@
 	--tertiary: #e3e3e3;
 
 	--accent: #939cb1;
+	--bg-soft: #2b2929;
 }
 
 * {
@@ -134,10 +135,10 @@ main {
 	justify-self: center;
 	background: linear-gradient(
 		45deg,
-		var(--accent) 0%,
-		var(--tertiary) 100%
-	); /* Cambiado a gradiente de azules */
-	color: #000000;
+		var(--bg-soft) 50%,
+		var(--bg-header) 100%
+	);
+	color: var(--text);
 	border-radius: 25px;
 }
 
@@ -194,8 +195,8 @@ main {
 	border-radius: 25px;
 	padding: 10px;
 	margin: 10px;
-	background-color: var(--accent);
-	color: #000000;
+	background-color: var(--bg-soft);
+	color: var(--text);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -205,9 +206,9 @@ main {
 .project:hover {
 	background: linear-gradient(
 		45deg,
-		var(--tertiary) 0%,
-		var(--accent) 100%
-	); /* Cambiado a gradiente de azules */
+		var(--bg-soft) 50%,
+		var(--bg-header) 100%
+	);
 	transition-duration: 0.25s;
 	transition-timing-function: ease-in;
 }
@@ -237,7 +238,7 @@ main {
 }
 
 .project h3 {
-	border-bottom: #000000 1px solid; /* Cambiado a gris oscuro suave */
+	border-bottom: var(--accent) 1px solid; /* Cambiado a gris oscuro suave */
 	padding-top: 10px;
 	text-align: center;
 	flex: 1;
@@ -252,12 +253,12 @@ main {
 }
 
 .project i {
-	color: black;
+	color: var(--text);
 	font-size: 28px;
 }
 
 .project i:hover {
-	color: var(--bg-header); /* Cambiado a azul índigo */
+	color: var(--accent); /* Cambiado a azul índigo */
 	cursor: pointer;
 }
 

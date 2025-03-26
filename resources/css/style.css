@@ -30,11 +30,6 @@ body {
 	color: var(--text); /* Cambiado a gris oscuro suave */
 }
 
-h2 {
-	padding: 10px;
-	justify-self: center;
-}
-
 .montserrat-h1 {
 	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
@@ -130,11 +125,19 @@ h2 {
 
 /* Main */
 
-main {
+#main {
 	padding: 20px;
 	justify-self: center;
 	text-align: justify;
-	width: 80%;
+	text-justify: newspaper;
+	width: 90vw;
+}
+
+.subtitulos {
+	padding: 10px;
+	justify-self: center;
+	font-weight: 600;
+	text-align: center;
 }
 
 /* About */
@@ -288,21 +291,23 @@ main {
 	padding: 20px;
 	padding-top: 1rem; /* Cambiado a azul muy claro */
 	justify-items: center;
+	text-align: center;
 }
 
-#contact div {
+.social {
 	padding: 10px;
 }
 
-#contact div a {
+.social a {
 	text-decoration: none;
 	color: var(--text);
 }
 
-#contact div a:hover {
+.social a:hover {
 	color: var(--accent);
 }
 
-#contact div i {
-	font-size: 28px;
+.social i {
+	font-size: 32px;
+	padding: 5px;
 }

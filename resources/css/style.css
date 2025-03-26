@@ -127,6 +127,7 @@ body {
 
 #main {
 	padding: 20px;
+	margin: 20px;
 	justify-self: center;
 	align-self: center;
 	align-items: center;
@@ -199,13 +200,13 @@ body {
 	padding: 10px;
 }
 
-.projects-container {
+.card-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.project {
+.card {
 	border: 1px solid #374151; /* Cambiado a gris oscuro suave */
 	border-radius: 25px;
 	padding: 10px;
@@ -218,7 +219,7 @@ body {
 	max-width: 400px;
 }
 
-.project:hover {
+.card:hover {
 	background: linear-gradient(
 		45deg,
 		var(--bg-soft) 50%,
@@ -228,7 +229,7 @@ body {
 	transition-timing-function: ease-in;
 }
 
-.project img {
+.card img {
 	width: 400px;
 	height: 300px;
 	border: #374151 1px solid; /* Cambiado a gris oscuro suave */
@@ -239,20 +240,13 @@ body {
 	max-width: 100%;
 }
 
-.project img:active {
+.card img:active {
 	transition-duration: 0.25s;
 	transition-timing-function: ease-in;
 	transform: scale(2);
 }
 
-.project-content {
-	padding: 15px;
-	flex: 2;
-	display: flex;
-	flex-direction: column;
-}
-
-.project h3 {
+.card h3 {
 	padding-top: 10px;
 	flex: 1;
 	text-align: center;
@@ -260,31 +254,38 @@ body {
 	border-bottom: var(--accent) 1px solid; /* Cambiado a gris oscuro suave */
 }
 
-.project p {
+.card p {
 	flex: 4;
 }
 
-.project span {
+.card span {
 	padding-top: 10px;
 }
 
-.project i {
+.card i {
 	color: var(--text);
 	font-size: 28px;
 }
 
-.project i:hover {
+.card i:hover {
 	color: var(--accent); /* Cambiado a azul índigo */
 	cursor: pointer;
 }
 
-.project-content div {
+.card-content {
+	padding: 15px;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-content div {
 	padding: 5px;
 	display: flex;
 	flex: 1;
 }
 
-.project-content div i {
+.card-content div i {
 	padding-right: 10px;
 }
 

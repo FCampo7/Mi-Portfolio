@@ -4,6 +4,7 @@
 
 	--title: #ffffff;
 	--text: #ffffff;
+	--text-secondary: #000000;
 
 	--primary: #677eff;
 	--secondary: #ffffff;
@@ -26,8 +27,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: var(--bg-color); /* Cambiado a gris muy claro */
-	color: var(--text); /* Cambiado a gris oscuro suave */
+	background-color: var(--bg-color);
+	color: var(--text);
 }
 
 .montserrat-h1 {
@@ -40,7 +41,7 @@ body {
 /* Header */
 
 #header {
-	background-color: #374151; /* Cambiado a gris oscuro suave */
+	background-color: var(--bg-header);
 	color: var(--text);
 	padding: 5px;
 	display: flex;
@@ -50,49 +51,49 @@ body {
 	z-index: 1000;
 }
 
-#header h1 {
+#header h2 {
 	font-size: 24px;
 	margin-left: 5px;
 }
 
-#header h1 a {
+#header h2 a {
 	color: var(--text);
 	text-decoration: none;
 	font-weight: 800;
 }
 
 #header nav {
-	background-color: #374151; /* Cambiado a gris oscuro suave */
-	color: var(--text);
 	padding: 5px;
 	margin-left: auto;
 }
 
-#header nav a {
+#header .nav-button {
 	color: var(--text);
 	text-decoration: none;
 	padding: 10px;
 	font-weight: 500;
 }
 
-#header nav a:hover {
+#header .nav-button:hover {
 	border-bottom: 3px solid var(--tertiary);
 }
 
-#header button {
-	background-color: var(--primary); /* Cambiado a azul índigo */
-	color: white;
-	border: 1px solid white;
+#header .cv {
+	background-color: var(--primary);
+	color: var(--text);
+	border: 1px solid var(--text);
 	padding: 10px;
 	border-radius: 5px;
 	margin-left: auto;
-	font-weight: bold;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
 }
 
-#header button:hover {
-	background-color: var(--tertiary); /* Cambiado a azul violeta */
-	cursor: pointer;
-	color: #000000;
+#header .cv:hover {
+	background-color: var(--tertiary);
+	color: var(--text-secondary);
 }
 
 /* Sección Hero */
@@ -119,13 +120,13 @@ body {
 	font-size: 4rem;
 	margin-bottom: 1.5rem;
 	line-height: 1.2;
-	color: whitesmoke;
+	color: var(--text);
 }
 
 .hero-content p {
 	font-size: 1.8rem;
 	font-weight: 500;
-	color: white;
+	color: var(--text);
 }
 
 /* Main */
@@ -134,11 +135,11 @@ body {
 	padding: 20px;
 	margin: 20px;
 	justify-self: center;
-	align-self: center;
+	/* align-self: center;
 	align-items: center;
-	align-content: center;
+	align-content: center; */
 	text-align: justify;
-	text-justify: newspaper;
+	text-justify: inter-character;
 	width: 90vw;
 }
 
@@ -184,19 +185,21 @@ body {
 
 .about-img img {
 	border-radius: 100%;
-	border-bottom: 5px solid #374151; /* Cambiado a gris oscuro suave */
-	border-right: 3px solid #374151; /* Cambiado a gris oscuro suave */
-	box-shadow: #374151 0 0 10px; /* Cambiado a gris oscuro suave */
+	border-bottom: 5px solid #374151;
+	border-right: 3px solid #374151;
+	box-shadow: #374151 0 0 10px;
 }
 
 /* Skills */
+
 #skills {
 	padding: 10px;
 }
 
-#skills div {
+#skills .skills-icons {
 	font-size: 48px;
 	padding: 10px;
+	text-align: center;
 }
 
 /* Projects */

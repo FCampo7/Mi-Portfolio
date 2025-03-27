@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,18 +22,16 @@
 	</head>
 	<body>
 		<header id="header">
-			<h1><a href="#">Portfolio</a></h1>
+			<h2><a href="#">Portfolio</a></h2>
 			<nav>
-				<a href="#about">Sobre Mi</a>
-				<a href="#skills">Habilidades</a>
-				<a href="#projects">Proyectos</a>
-				<a href="#contact">Contacto</a>
+				<a class="nav-button" href="#about">Sobre Mi</a>
+				<a class="nav-button" href="#skills">Habilidades</a>
+				<a class="nav-button" href="#projects">Proyectos</a>
+				<a class="nav-button" href="#contact">Contacto</a>
 			</nav>
-			<button
-				onClick="()=>{document.open('/resources/css/style.css', '', 'noopener=true');}"
-			>
+			<a class="cv" href="resources/docs/CV.pdf" target="_blank">
 				Curriculum Vitae
-			</button>
+			</a>
 		</header>
 
 		<section id="inicio" class="hero">
@@ -85,7 +83,7 @@
 
 			<section id="skills">
 				<h2 class="subtitulos">Habilidades y Herramientas</h2>
-				<div align="center">
+				<div class="skills-icons">
 					<i class="devicon-c-plain"></i>
 					<i class="devicon-cplusplus-plain"></i>
 					<i class="devicon-csharp-plain"></i>

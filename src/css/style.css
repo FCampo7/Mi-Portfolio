@@ -225,9 +225,9 @@ body {
 }
 
 .card:hover {
-	background: linear-gradient(
-		45deg,
-		var(--bg-soft) 50%,
+	background-image: radial-gradient(
+		circle,
+		var(--bg-soft) 45%,
 		var(--bg-header) 100%
 	);
 	transition-duration: 0.25s;

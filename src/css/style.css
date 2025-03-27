@@ -1,6 +1,7 @@
 :root {
 	--bg-color: #000000;
 	--bg-header: #374151;
+	--bg-soft: #060606;
 
 	--title: #ffffff;
 	--text: #ffffff;
@@ -11,7 +12,8 @@
 	--tertiary: #e3e3e3;
 
 	--accent: #939cb1;
-	--bg-soft: #121212;
+
+	--border-color: #252525;
 }
 
 * {
@@ -126,7 +128,7 @@ body {
 .hero-content p {
 	font-size: 1.8rem;
 	font-weight: 500;
-	color: var(--text);
+	color: var(--accent);
 }
 
 /* Main */
@@ -215,7 +217,7 @@ body {
 }
 
 .card {
-	border: 1px solid #374151; /* Cambiado a gris oscuro suave */
+	border: 1px solid var(--border-color);
 	border-radius: 25px;
 	padding: 10px;
 	margin: 10px;
@@ -230,7 +232,7 @@ body {
 .card:hover {
 	background-image: radial-gradient(
 		circle,
-		var(--bg-soft) 45%,
+		var(--bg-soft) 70%,
 		var(--bg-header) 100%
 	);
 	transition-duration: 0.25s;
@@ -240,7 +242,7 @@ body {
 .card img {
 	width: 400px;
 	height: 300px;
-	border: #374151 1px solid; /* Cambiado a gris oscuro suave */
+	border: var(--border-color) 1px solid; /* Cambiado a gris oscuro suave */
 	border-radius: 20px;
 	align-self: center;
 	cursor: zoom-in;
@@ -255,11 +257,12 @@ body {
 }
 
 .card h3 {
-	padding-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 15px;
 	flex: 1;
 	text-align: center;
 	font-weight: 600;
-	border-bottom: var(--accent) 1px solid; /* Cambiado a gris oscuro suave */
+	border-bottom: var(--border-color) 1px solid; /* Cambiado a gris oscuro suave */
 }
 
 .card p {

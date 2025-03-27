@@ -111,7 +111,7 @@ strong {
 			var(--bg-soft) 80%,
 			var(--bg-color) 100%
 		),
-		url("../../resources/img/Hero.jpg");
+		url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
 	display: flex;
 	align-items: center;
 	justify-content: center;

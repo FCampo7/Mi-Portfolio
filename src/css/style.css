@@ -137,9 +137,6 @@ body {
 	padding: 20px;
 	margin: 20px;
 	justify-self: center;
-	/* align-self: center;
-	align-items: center;
-	align-content: center; */
 	text-align: justify;
 	text-justify: inter-character;
 	width: 90vw;
@@ -271,6 +268,7 @@ body {
 
 .card span {
 	padding-top: 10px;
+	margin-bottom: 10px;
 }
 
 .card i {
@@ -290,13 +288,14 @@ body {
 	flex-direction: column;
 }
 
-.card-content div {
-	padding: 5px;
+.card-content .card-demo {
+	padding: 15px 0px;
+	padding-bottom: 0px;
 	display: flex;
 	flex: 1;
 }
 
-.card-content div i {
+.card-content .card-demo i {
 	padding-right: 10px;
 }
 

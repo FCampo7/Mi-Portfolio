@@ -7,7 +7,7 @@
 	--text: #ffffff;
 	--text-secondary: #000000;
 
-	--primary: #677eff;
+	--primary: #677eff; /* Color anterior */
 	--secondary: #ffffff;
 	--tertiary: #e3e3e3;
 
@@ -85,7 +85,7 @@ strong {
 }
 
 #header .cv {
-	background-color: var(--primary);
+	background-color: var(--bg-soft);
 	color: var(--text);
 	border: 1px solid var(--text);
 	padding: 8px;
@@ -101,8 +101,7 @@ strong {
 }
 
 #header .cv:hover {
-	background-color: var(--tertiary);
-	color: var(--text-secondary);
+	background-color: var(--primary);
 }
 
 /* Sección Hero */

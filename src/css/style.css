@@ -110,7 +110,7 @@ strong {
 	background-color: var(--primary);
 }
 
-/* Sección Hero */
+/* Hero */
 .hero {
 	padding: 0 1rem;
 	min-height: 100vh;
@@ -127,6 +127,7 @@ strong {
 			var(--bg-color) 100%
 		),
 		url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
+	background-size: cover;
 }
 
 .hero-content {
@@ -329,7 +330,7 @@ strong {
 }
 
 .card i:hover {
-	color: var(--accent); /* Cambiado a azul índigo */
+	color: var(--accent);
 
 	cursor: pointer;
 }
@@ -358,7 +359,7 @@ strong {
 
 #contact {
 	padding: 20px;
-	padding-top: 1rem; /* Cambiado a azul muy claro */
+	padding-top: 1rem;
 
 	justify-items: center;
 	text-align: center;

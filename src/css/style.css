@@ -37,7 +37,7 @@ strong {
 	font-weight: 700;
 }
 
-.montserrat-h1 {
+.Turret-Road-h1 {
 	font-family: "Turret Road", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 800;
@@ -47,14 +47,18 @@ strong {
 /* Header */
 
 #header {
-	background-color: var(--bg-color);
-	color: var(--text);
-	padding: 5px;
-	display: flex;
-	align-items: center;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
+
+	padding: 5px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: var(--bg-color);
+	color: var(--text);
 }
 
 #header h2 {
@@ -68,15 +72,15 @@ strong {
 	font-weight: 800;
 }
 
-#header nav {
+#header .nav-bar {
 	padding: 5px;
-	margin-left: auto;
 }
 
-#header .nav-button {
+#header .nav-bar .nav-button {
+	padding: 10px;
+
 	color: var(--text);
 	text-decoration: none;
-	padding: 10px;
 	font-weight: 500;
 }
 
@@ -85,17 +89,19 @@ strong {
 }
 
 #header .cv {
-	background-color: var(--bg-soft);
-	color: var(--text);
-	border: 1px solid var(--text);
-	padding: 8px;
-	border-radius: 5px;
-	margin-left: auto;
 	margin-top: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
-	font-weight: 600;
+	padding: 8px;
+
+	background-color: var(--bg-soft);
+	color: var(--text);
+	border: 1px solid var(--text);
+	border-radius: 5px;
+
 	cursor: pointer;
+
+	font-weight: 600;
 	text-decoration: none;
 	text-align: center;
 }
@@ -106,7 +112,14 @@ strong {
 
 /* Sección Hero */
 .hero {
+	padding: 0 1rem;
 	min-height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
 	background-image: linear-gradient(
 			178deg,
 			#ffffff00 0%,
@@ -114,11 +127,6 @@ strong {
 			var(--bg-color) 100%
 		),
 		url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	padding: 0 1rem;
 }
 
 .hero-content {
@@ -126,35 +134,40 @@ strong {
 }
 
 .hero-content h1 {
-	font-size: 4rem;
 	margin-bottom: 1.5rem;
-	line-height: 1.2;
+
 	color: var(--text);
+	font-size: 4rem;
+	line-height: 1.2;
 }
 
 .hero-content p {
+	color: var(--accent);
 	font-size: 1.8rem;
 	font-weight: 500;
-	color: var(--accent);
 }
 
 /* Main */
 
 #main {
-	padding: 20px;
 	margin: 20px;
+	padding: 20px;
+
+	width: 90vw;
+
 	justify-self: center;
 	text-align: justify;
 	text-justify: inter-character;
-	width: 90vw;
 }
 
 .subtitulos {
 	padding: 10px;
+
 	justify-self: center;
-	font-weight: 600;
 	text-align: center;
+
 	font-family: "Turret Road", sans-serif;
+	font-weight: 600;
 	font-size: 2rem;
 }
 
@@ -162,7 +175,9 @@ strong {
 
 #about {
 	padding: 10px;
+
 	justify-self: center;
+
 	background: linear-gradient(
 		45deg,
 		var(--bg-soft) 50%,
@@ -174,20 +189,23 @@ strong {
 
 .about-container {
 	padding: 10px;
+
 	display: flex;
 	flex-wrap: wrap-reverse;
 }
 
 .about-text {
 	padding: 10px;
-	flex: 2;
+
 	min-width: 75%;
+
+	flex: 2;
 }
 
 .about-img {
 	padding: 10px;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
 	flex: 1;
 }
 
@@ -205,8 +223,9 @@ strong {
 }
 
 #skills .skills-icons {
-	font-size: 48px;
 	padding: 10px;
+
+	font-size: 48px;
 	text-align: center;
 }
 
@@ -223,16 +242,19 @@ strong {
 }
 
 .card {
-	border: 1px solid var(--border-color);
-	border-radius: 25px;
-	padding: 10px;
 	margin: 10px;
-	background-color: var(--bg-soft);
-	color: var(--text);
+	padding: 10px;
+
+	max-width: 400px;
+
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	max-width: 400px;
+
+	color: var(--text);
+	background-image: var(--bg-soft);
+	border: 1px solid var(--border-color);
+	border-radius: 25px;
 }
 
 .card:hover {
@@ -241,19 +263,35 @@ strong {
 		var(--bg-soft) 70%,
 		var(--bg-header) 100%
 	);
-	transition-duration: 0.25s;
-	transition-timing-function: ease-in;
+
+	animation: card-hover 2s ease-in-out;
+	animation-iteration-count: 3;
+}
+
+@keyframes card-hover {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 .card img {
 	width: 400px;
+	max-width: 100%;
 	height: 300px;
+
+	flex: 1;
+	align-self: center;
+
+	cursor: zoom-in;
+
 	border: var(--border-color) 1px solid;
 	border-radius: 20px;
-	align-self: center;
-	cursor: zoom-in;
-	flex: 1;
-	max-width: 100%;
 }
 
 .card img:active {
@@ -265,10 +303,13 @@ strong {
 .card h3 {
 	padding-top: 5px;
 	padding-bottom: 15px;
+
 	flex: 1;
 	text-align: center;
 	font-weight: 600;
+
 	border-bottom: var(--border-color) 1px solid;
+
 	font-family: "Turret Road", sans-serif;
 	font-size: 1.5rem;
 }
@@ -278,8 +319,8 @@ strong {
 }
 
 .card span {
-	padding-top: 10px;
 	margin-bottom: 10px;
+	padding-top: 10px;
 }
 
 .card i {
@@ -289,19 +330,22 @@ strong {
 
 .card i:hover {
 	color: var(--accent); /* Cambiado a azul índigo */
+
 	cursor: pointer;
 }
 
 .card-content {
 	padding: 15px;
-	flex: 2;
+
 	display: flex;
 	flex-direction: column;
+	flex: 2;
 }
 
 .card-content .card-demo {
 	padding: 15px 0px;
 	padding-bottom: 0px;
+
 	display: flex;
 	flex: 1;
 }
@@ -315,6 +359,7 @@ strong {
 #contact {
 	padding: 20px;
 	padding-top: 1rem; /* Cambiado a azul muy claro */
+
 	justify-items: center;
 	text-align: center;
 }
@@ -324,8 +369,8 @@ strong {
 }
 
 .social a {
-	text-decoration: none;
 	color: var(--text);
+	text-decoration: none;
 }
 
 .social a:hover {
@@ -333,6 +378,7 @@ strong {
 }
 
 .social i {
-	font-size: 32px;
 	padding: 5px;
+
+	font-size: 32px;
 }

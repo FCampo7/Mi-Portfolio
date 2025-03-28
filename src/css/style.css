@@ -27,14 +27,17 @@
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--bg-color);
 	color: var(--text);
+	background-color: var(--bg-color);
 }
 
 strong {
 	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+	font-weight: 100;
 }
 
 .Turret-Road-h1 {
@@ -72,11 +75,11 @@ strong {
 	font-weight: 800;
 }
 
-#header .nav-bar {
+.nav-bar {
 	padding: 5px;
 }
 
-#header .nav-bar .nav-button {
+.nav-button {
 	padding: 10px;
 
 	color: var(--text);
@@ -84,11 +87,11 @@ strong {
 	font-weight: 500;
 }
 
-#header .nav-button:hover {
+.nav-button:hover {
 	border-bottom: 3px solid var(--tertiary);
 }
 
-#header .cv {
+.cv {
 	margin-top: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
@@ -106,7 +109,7 @@ strong {
 	text-align: center;
 }
 
-#header .cv:hover {
+.cv:hover {
 	background-color: var(--primary);
 }
 
@@ -121,7 +124,7 @@ strong {
 	text-align: center;
 
 	background-image: linear-gradient(
-			178deg,
+			180deg,
 			#ffffff00 0%,
 			var(--bg-soft) 80%,
 			var(--bg-color) 100%
@@ -185,7 +188,7 @@ strong {
 		var(--bg-header) 100%
 	);
 	color: var(--text);
-	border-radius: 25px;
+	border-radius: 15px;
 }
 
 .about-container {
@@ -266,7 +269,6 @@ strong {
 	);
 
 	animation: card-hover 2s ease-in-out;
-	animation-iteration-count: 3;
 }
 
 @keyframes card-hover {

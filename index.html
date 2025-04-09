@@ -52,12 +52,12 @@
 				<div class="about-container">
 					<div class="about-text">
 						<p>
-							Soy un apasionado de la programación y el desarrollo
-							de software. Me motiva enfrentar desafíos que pongan
-							a prueba mis conocimientos y me permitan adquirir
-							nuevas habilidades. Siempre estoy en búsqueda de
-							oportunidades para crecer tanto a nivel técnico como
-							profesional.
+							Soy Francisco, un apasionado de la programación y el
+							desarrollo de software. Me motiva enfrentar desafíos
+							que pongan a prueba mis conocimientos y me permitan
+							adquirir nuevas habilidades. Siempre estoy en
+							búsqueda de oportunidades para crecer tanto a nivel
+							técnico como profesional.
 						</p>
 						<br />
 						<p>
@@ -88,7 +88,7 @@
 					</div>
 					<figure class="about-img">
 						<img
-							src="resources/img/Avatar(C).jpg"
+							src="../resources/img/Avatar(C).jpg"
 							alt="Francisco Luis Campo"
 							width="200"
 							height="200"
@@ -100,24 +100,28 @@
 			<section id="skills">
 				<h2 class="subtitulos">Habilidades y Herramientas</h2>
 				<div class="skills-icons">
+					<h4 class="subtitulos">Lenguajes</h4>
 					<i class="devicon-c-plain"></i>
 					<i class="devicon-cplusplus-plain"></i>
 					<i class="devicon-csharp-plain"></i>
 					<i class="devicon-python-plain"></i>
-					<i class="devicon-flask-plain"></i>
-					<i class="devicon-matlab-plain"></i>
-					<i class="devicon-flutter-plain"></i>
 					<i class="devicon-dart-plain"></i>
 					<i class="devicon-html5-plain"></i>
 					<i class="devicon-css3-plain"></i>
 					<i class="devicon-javascript-plain"></i>
+					<i class="devicon-matlab-plain"></i>
+					<h4 class="subtitulos">Frameworks</h4>
+					<i class="devicon-flask-plain"></i>
+					<i class="devicon-flutter-plain"></i>
 					<i class="devicon-bulma-plain"></i>
+					<i class="devicon-qt-plain"></i>
+					<i class="devicon-opengl-plain"></i>
+					<h4 class="subtitulos">Bases de Datos</h4>
 					<i class="devicon-sqldeveloper-plain"></i>
 					<i class="devicon-mysql-plain"></i>
 					<i class="devicon-sqlite-plain"></i>
-					<i class="devicon-opengl-plain"></i>
+					<h4 class="subtitulos">Otros</h4>
 					<i class="devicon-git-plain"></i>
-					<i class="devicon-qt-plain"></i>
 					<i class="devicon-visualstudio-plain"></i>
 					<i class="devicon-vscode-plain"></i>
 				</div>
@@ -366,11 +370,48 @@
 					</article>
 				</section>
 			</section>
+
+			<!--- Formulario de contacto -->
+			<section id="contact" class="formulario-container">
+				<h2 class="subtitulos">Contacto</h2>
+				<form class="formulario">
+					<div>
+						<label for="name">Nombre</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Nombre"
+							required
+						/>
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+							required
+						/>
+					</div>
+					<div>
+						<label for="subject">Mensaje</label>
+						<textarea
+							name="message"
+							type="text"
+							name="message"
+							id="message"
+							placeholder="Mensaje"
+							required
+						></textarea>
+					</div>
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
 		</main>
 
-		<footer id="contact">
-			<h2 class="subtitulos">Contacto</h2>
-
+		<footer id="footer">
 			<h3>Con ♥️ de Fran</h3>
 
 			<section class="social">
@@ -384,6 +425,11 @@
 				</a>
 				<a href="https://instagram.com/francisco.campo">
 					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a
+					href="https://wa.me/5493493661556?text=Hola%20Fran!%20Queria%20contactarte%20para%20un%20trabajo."
+				>
+					<i class="fa-brands fa-whatsapp"></i>
 				</a>
 				<a href="https://github.com/FCampo7">
 					<i class="fa-brands fa-github"></i>

@@ -11,7 +11,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
 		/>
-		<link rel="stylesheet" href="./src/css/style.css" />
+		<link rel="stylesheet" href="../src/css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -33,7 +33,7 @@
 				<div
 					class="container-fluid d-flex align-items-center justify-content-center justify-content-lg-between"
 				>
-					<a class="navbar-brand" href="./index.html">Portfolio</a>
+					<a class="navbar-brand" href="../index.html">Portfolio</a>
 					<button
 						class="navbar-toggler position-absolute end-0 top-0 me-1 mt-1"
 						type="button"
@@ -53,22 +53,22 @@
 						<div class="navbar-nav">
 							<a
 								class="nav-button w-100 text-center text-nowrap"
-								href="./pages/about.html"
+								href="./about.html"
 								>Sobre Mi</a
 							>
 							<a
 								class="nav-button w-100 text-center text-nowrap"
-								href="./pages/habilidades.html"
+								href="./habilidades.html"
 								>Habilidades</a
 							>
 							<a
 								class="nav-button w-100 text-center text-nowrap"
-								href="./pages/proyectos.html"
+								href="./proyectos.html"
 								>Proyectos</a
 							>
 							<a
 								class="nav-button w-100 text-center text-nowrap"
-								href="./pages/contacto.html"
+								href="./contacto.html"
 								>Contacto</a
 							>
 						</div>
@@ -93,20 +93,51 @@
 			</nav>
 		</header>
 
-		<section id="inicio" class="hero">
-			<div class="hero-content">
-				<h1 class="Turret-Road-h1">¡Hola! Soy Fran</h1>
-				<p>
-					Estudiante de Ingeniería Biomédica 🦾 y Desarrollo Fullstack
-					Web 👨🏻‍💻
-				</p>
-			</div>
-		</section>
+		<main id="main">
+			<!--- Formulario de contacto -->
+			<section class="formulario-container">
+				<h2 class="subtitulos">Contacto</h2>
+				<form class="formulario">
+					<div>
+						<label for="name">Nombre</label>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Nombre"
+							required
+						/>
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+							required
+						/>
+					</div>
+					<div>
+						<label for="subject">Mensaje</label>
+						<textarea
+							name="message"
+							type="text"
+							name="message"
+							id="message"
+							placeholder="Mensaje"
+							required
+						></textarea>
+					</div>
+					<button type="submit">Enviar</button>
+				</form>
+			</section>
+		</main>
 
 		<footer id="footer">
 			<h3>Con ♥️ de Fran</h3>
 
-			<section class="social container-fluid">
+			<section class="social">
 				<a href="mailto:campofranciscoluis@gmail.com">
 					<i class="fa-solid fa-envelope"></i>
 				</a>

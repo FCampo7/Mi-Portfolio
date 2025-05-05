@@ -19,17 +19,23 @@ Proyecto para el curso "Desarrollo Web" de la diplomatura "Desarrollo Fullstack 
  | | |-CV.pdf
  | |
  | |-img
- |   |-Proyectos
- |   | |-SVIM
- |   | | |-imgs del proyecto SVIM
- |   | |-imgs de otros proyectos
- |   |
- |   |-img avatar
- |   |-img hero
+ | | |-Proyectos
+ | | | |-SVIM
+ | | | | |-imgs del proyecto SVIM
+ | | | |-imgs de otros proyectos
+ | | |
+ | | |-img avatar
+ | | |-img hero
+ | |
+ | |-proyectos.json (Data de los proyectos)
  |
  |-src
  | |-css
- |   |-style.css (Todos los estilos en la misma hoja css - leer aclaraciones)
+ | | |-style.css (Todos los estilos en la misma hoja css - leer aclaraciones)
+ | |
+ | |-js
+ | | |-load-projects.js (script para cargar los proyectos de una manera mas sencilla)
+ | |
  | |-template
  |   |-template.html (Mi template para no hacer tanto Ctrl+C y Ctrl+V  - leer aclaraciones)
  |
@@ -46,9 +52,7 @@ Proyecto para el curso "Desarrollo Web" de la diplomatura "Desarrollo Fullstack 
 
 template.html es mi template básico para empezar a trabajar con nuevos archivos html y mantener la misma maqueta y el mismo estilo en todas las páginas.
 
-No sabia si realizar los estilos en hojas css diferentes o en la misma, así que los hice todos en la misma hoja. **Separados por comentarios para cada sección**.
-
-El nav para Mobile no conseguí realizarlo, por lo tanto voy a esperar las siguientes clases.
+Ahora cargo los proyectos mediante un script de js para simplificar la tarea al momento de agregar un nuevo proyecto.
 
 ### Wireframes
 

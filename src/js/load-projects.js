@@ -1,5 +1,7 @@
 onload = async function () {
-	await fetch("../../resources/proyectos.json")
+	await fetch(
+		"https://raw.githubusercontent.com/FCampo7/Mi-Portfolio/refs/heads/projects-feature/resources/proyectos.json"
+	)
 		.then((res) => {
 			if (!res.ok) {
 				throw new Error("Network response was not ok.");

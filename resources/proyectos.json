@@ -1,0 +1,108 @@
+[
+	{
+		"titulo": "SVIM",
+		"imagen": "../resources/img/Proyectos/SVIM/Captura de pantalla 2023-09-25 200525.jpg",
+		"alt": "SVIM demo",
+		"tecnologias": ["cplusplus", "opengl", "qt"],
+		"descripcion": "Software para aplicar filtros a imágenes en formato .mif",
+		"links": {
+			"github": "https://github.com/FCampo7/SVIM"
+		}
+	},
+	{
+		"titulo": "EQDB",
+		"imagen": "../resources/img/Proyectos/EqBD.png",
+		"alt": "EQDB demo",
+		"tecnologias": ["cplusplus", "sqlite", "qt"],
+		"descripcion": "Software simple para la gestión de inventario",
+		"links": {
+			"github": "https://github.com/FCampo7/eqdatabase-sqlite-qt-cpp"
+		}
+	},
+	{
+		"titulo": "ClimaBoti",
+		"imagen": "../resources/img/Proyectos/ClimaBoti.png",
+		"alt": "ClimaBoti demo",
+		"tecnologias": ["python", "flask", "html5", "css3", "bulma"],
+		"descripcion": "Bot de telegram para consultar el clima actual en una ubicación especifica",
+		"links": {
+			"github": "https://github.com/FCampo7/test-weather-telegram-bot",
+			"web": "https://weather-telegram-bot-webhook.onrender.com",
+			"telegram": "http://t.me/PTestWearherBot"
+		}
+	},
+	{
+		"titulo": "Tip Calculator",
+		"imagen": "../resources/img/Proyectos/Tip Calculator.png",
+		"alt": "Tip Calculator demo",
+		"tecnologias": ["html5", "css3", "javascript"],
+		"descripcion": "Challenge de Frontend Mentor. Calculadora de propinas que permite calcular el monto total a pagar.",
+		"links": {
+			"github": "https://github.com/FCampo7/Tip-Calculator",
+			"web": "https://fcampo7.github.io/Tip-Calculator/"
+		}
+	},
+	{
+		"titulo": "Browser Extensions Manager",
+		"imagen": "../resources/img/Proyectos/Browser Extensions Manager.png",
+		"alt": "Browser Extensions Manager demo",
+		"tecnologias": ["html5", "css3", "javascript"],
+		"descripcion": "Challenge de Frontend Mentor. Aplicación web que muestra las extensiones instaladas en el navegador Chrome. Cuenta con tema claro y oscuro, y permite filtrar y eliminar extensiones de la lista.",
+		"links": {
+			"github": "https://github.com/FCampo7/Extensions-Manager",
+			"web": "https://fcampo7.github.io/Extensions-Manager/"
+		}
+	},
+	{
+		"titulo": "Temperature monitoring system for COVID-19 patients",
+		"imagen": "../resources/img/Proyectos/Termometro Digital.png",
+		"alt": "Termómetro Digital demo",
+		"tecnologias": ["c", "csharp", "visualstudio"],
+		"descripcion": "Sistema de control de temperatura para pacientes de COVID-19 utilizando el microcontrolador PIC16F877, un modulo bluetooth y un LCD Grader",
+		"links": {
+			"github": "https://github.com/eastanganelli/2020_2C_Final_Project_Digital_Electronics_II"
+		}
+	},
+	{
+		"titulo": "BD COVID-19",
+		"imagen": "../resources/img/Proyectos/TP_BD.bmp",
+		"alt": "BD COVID-19 demo",
+		"tecnologias": ["mysql", "sqldeveloper"],
+		"descripcion": "Base de datos a nivel nacional de los pacientes con SARS-CoV-2/COVID-19 además de los centros de salud y hoteles donde se encontraban ingresados o haciendo cuarentena, a su vez contenía los proveedores de los insumos hospitalarios de estos centros y un control de stock de los suministros.",
+		"links": {
+			"github": "https://github.com/eastanganelli/2020-1C-Final-Project-Data-Base"
+		}
+	},
+	{
+		"titulo": "Percolación Web",
+		"imagen": "../resources/img/Proyectos/percolacion.png",
+		"alt": "Percolación demo",
+		"tecnologias": ["html5", "css3", "javascript", "bulma"],
+		"descripcion": "Proyecto que ejecuta el algoritmo de percolación. Fue realizado con la finalidad de probar el Framework Bulma CSS, desarrollar habilidades y aprender conceptos de desarrollo web.",
+		"links": {
+			"github": "https://github.com/FCampo7/Percolacion-Web",
+			"web": "https://fcampo7.github.io/Percolacion-Web/"
+		}
+	},
+	{
+		"titulo": "Trivia Game - Versión Flutter",
+		"imagen": "../resources/img/Proyectos/Trivia Game.png",
+		"alt": "Trivia Game demo",
+		"tecnologias": ["dart", "flutter"],
+		"descripcion": "App que complementa juegos de Trivia agregando nuevas preguntas. Versión en Flutter.",
+		"links": {
+			"github": "https://github.com/FCampo7/Trivia-Game-Flutter",
+			"web": "https://fcampo.gitlab.io/trivia-game-flutter/#/"
+		}
+	},
+	{
+		"titulo": "Trivia Game - Versión Python",
+		"imagen": "../resources/img/Proyectos/Trivia Game - Python.png",
+		"alt": "Trivia Game python demo",
+		"tecnologias": ["python", "qt"],
+		"descripcion": "App que complementa juegos de Trivia agregando nuevas preguntas. Versión en Python.",
+		"links": {
+			"github": "https://github.com/FCampo7/Trivia-Game"
+		}
+	}
+]

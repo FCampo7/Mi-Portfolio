@@ -1,0 +1,37 @@
+$bg-color: #000000;
+$bg-header: #374151;
+$bg-soft: #060606;
+
+$title: #ffffff;
+$text: #ffffff;
+$text-secondary: #000000;
+
+$primary: #677eff;
+$secondary: #ffffff;
+$tertiary: #e3e3e3;
+
+$accent: #939cb1;
+
+$border-color: #252525;
+
+/* **********
+*  * Skills *
+*  **********/
+
+#skills {
+	padding: 8px;
+
+	.skills-icons {
+		padding: 8px;
+
+		font-size: 48px;
+		text-align: center;
+	}
+
+	h4 {
+		padding: 8px;
+		font-size: 1.5rem;
+		text-align: center;
+		font-weight: 600;
+	}
+}

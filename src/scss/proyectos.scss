@@ -1,0 +1,142 @@
+$bg-color: #000000;
+$bg-header: #374151;
+$bg-soft: #060606;
+
+$title: #ffffff;
+$text: #ffffff;
+$text-secondary: #000000;
+
+$primary: #677eff;
+$secondary: #ffffff;
+$tertiary: #e3e3e3;
+
+$accent: #939cb1;
+
+$border-color: #252525;
+
+/* ************
+*  * Projects *
+*  ************/
+
+#projects {
+	padding: 8px;
+}
+
+.mi-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.mi-card {
+	margin: 8px;
+	padding: 8px;
+
+	max-width: 400px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	color: $text;
+	background-image: $bg-soft;
+	border: 2px solid $border-color;
+	border-radius: 24px;
+
+	&:hover {
+		background-image: radial-gradient(
+			circle,
+			$bg-soft 70%,
+			$bg-header 100%
+		);
+
+		animation: mi-card-hover 1s ease-in-out;
+	}
+
+	img {
+		width: 400px;
+		max-width: 100%;
+		max-height: 200px;
+		min-height: 200px;
+
+		flex: 1;
+		align-self: center;
+
+		cursor: zoom-in;
+
+		border: $border-color 1px solid;
+		border-radius: 20px;
+
+		&:active {
+			transition-duration: 0.25s;
+			transition-timing-function: ease-in;
+			transform: scale(2);
+		}
+	}
+
+	h3 {
+		padding-top: 4px;
+		padding-bottom: 14px;
+
+		flex: 1;
+		text-align: center;
+		font-weight: 600;
+
+		border-bottom: $border-color 2px solid;
+
+		font-family: "Turret Road", sans-serif;
+		font-size: 1.5rem;
+	}
+
+	p {
+		flex: 4;
+	}
+
+	span {
+		margin-bottom: 8px;
+		padding-top: 8px;
+	}
+
+	i {
+		color: $text;
+		font-size: 28px;
+
+		&:hover {
+			color: $accent;
+
+			cursor: pointer;
+		}
+	}
+}
+
+.mi-card-content {
+	padding: 14px;
+
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+
+	.mi-card-demo {
+		padding: 14px 0px;
+		padding-bottom: 0px;
+
+		display: flex;
+		flex: 1;
+
+		i {
+			padding-right: 8px;
+		}
+	}
+}
+
+@keyframes mi-card-hover {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,67 @@
+$bg-color: #000000;
+$bg-header: #374151;
+$bg-soft: #060606;
+
+$title: #ffffff;
+$text: #ffffff;
+$text-secondary: #000000;
+
+$primary: #677eff;
+$secondary: #ffffff;
+$tertiary: #e3e3e3;
+
+$accent: #939cb1;
+
+$border-color: #252525;
+
+/* ***********
+*  *  About  *
+*  ***********/
+
+#about {
+	padding: 8px;
+
+	justify-self: center;
+
+	background: linear-gradient(45deg, $bg-soft 50%, $bg-header 100%);
+	color: $text;
+	border-radius: 14px;
+}
+
+@media screen and (min-width: 768px) {
+	#about {
+		max-width: 70%;
+	}
+}
+
+.about-container {
+	padding: 8px;
+
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.about-text {
+	padding: 8px;
+
+	min-width: 75%;
+
+	flex: 2;
+
+	font-size: 1.05rem;
+}
+
+.about-img {
+	padding: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+
+	img {
+		border-radius: 100%;
+		border-bottom: 4px solid #374151;
+		border-left: 3px solid #374151;
+		box-shadow: #374151 0 0 8px;
+	}
+}

@@ -1,0 +1,19 @@
+/* **********
+*  * Skills *
+*  **********/
+#skills {
+  padding: 8px;
+}
+#skills .skills-icons {
+  padding: 8px;
+  font-size: 48px;
+  text-align: center;
+}
+#skills h4 {
+  padding: 8px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=habilidades.css.map */

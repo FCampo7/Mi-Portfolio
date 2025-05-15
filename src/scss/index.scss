@@ -1,18 +1,5 @@
-$bg-color: #000000;
-$bg-header: #374151;
-$bg-soft: #060606;
-
-$title: #ffffff;
-$text: #ffffff;
-$text-secondary: #000000;
-
-$primary: #677eff;
-$secondary: #ffffff;
-$tertiary: #e3e3e3;
-
-$accent: #939cb1;
-
-$border-color: #252525;
+@use "mixins";
+@use "variables";
 
 /* **********
 *  *  Hero  *
@@ -22,16 +9,14 @@ $border-color: #252525;
 	padding: 0 1rem;
 	min-height: 100vh;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include mixins.flex(column, center, center);
 	text-align: center;
 
 	background-image: linear-gradient(
 			180deg,
 			#ffffff00 0%,
-			$bg-soft 80%,
-			$bg-color 100%
+			variables.$bg-soft 80%,
+			variables.$bg-color 100%
 		),
 		url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
 	background-size: cover;
@@ -42,13 +27,13 @@ $border-color: #252525;
 	h1 {
 		margin-bottom: 1.5rem;
 
-		color: $text;
+		color: variables.$text;
 		font-size: 4rem;
 		line-height: 1.2;
 	}
 
 	p {
-		color: $accent;
+		color: variables.$accent;
 		font-size: 1.8rem;
 		font-weight: 500;
 	}

@@ -1,18 +1,5 @@
-$bg-color: #000000;
-$bg-header: #374151;
-$bg-soft: #060606;
-
-$title: #ffffff;
-$text: #ffffff;
-$text-secondary: #000000;
-
-$primary: #677eff;
-$secondary: #ffffff;
-$tertiary: #e3e3e3;
-
-$accent: #939cb1;
-
-$border-color: #252525;
+@use "mixins";
+@use "variables";
 
 /* ************
 *  * Projects *
@@ -23,9 +10,7 @@ $border-color: #252525;
 }
 
 .mi-card-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	@include mixins.flex(row, center, center, wrap);
 }
 
 .mi-card {
@@ -34,20 +19,18 @@ $border-color: #252525;
 
 	max-width: 400px;
 
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	@include mixins.flex(column, $wrap: wrap);
 
-	color: $text;
-	background-image: $bg-soft;
-	border: 2px solid $border-color;
+	color: variables.$text;
+	background-image: variables.$bg-soft;
+	border: 2px solid variables.$border-color;
 	border-radius: 24px;
 
 	&:hover {
 		background-image: radial-gradient(
 			circle,
-			$bg-soft 70%,
-			$bg-header 100%
+			variables.$bg-soft 70%,
+			variables.$bg-header 100%
 		);
 
 		animation: mi-card-hover 1s ease-in-out;
@@ -64,7 +47,7 @@ $border-color: #252525;
 
 		cursor: zoom-in;
 
-		border: $border-color 1px solid;
+		border: variables.$border-color 1px solid;
 		border-radius: 20px;
 
 		&:active {
@@ -74,57 +57,58 @@ $border-color: #252525;
 		}
 	}
 
-	h3 {
-		padding-top: 4px;
-		padding-bottom: 14px;
+	.mi-card-content {
+		padding: 14px;
 
-		flex: 1;
-		text-align: center;
-		font-weight: 600;
+		@include mixins.flex(column, center, flex-start);
+		flex: 2;
 
-		border-bottom: $border-color 2px solid;
+		h3 {
+			width: 100%;
+			align-self: center;
+			padding-top: 4px;
+			padding-bottom: 14px;
 
-		font-family: "Turret Road", sans-serif;
-		font-size: 1.5rem;
-	}
+			flex: 1;
+			text-align: center;
+			font-weight: 600;
 
-	p {
-		flex: 4;
-	}
+			border-bottom: variables.$border-color 2px solid;
 
-	span {
-		margin-bottom: 8px;
-		padding-top: 8px;
-	}
-
-	i {
-		color: $text;
-		font-size: 28px;
-
-		&:hover {
-			color: $accent;
-
-			cursor: pointer;
+			font-family: "Turret Road", sans-serif;
+			font-size: 1.5rem;
 		}
-	}
-}
 
-.mi-card-content {
-	padding: 14px;
+		p {
+			flex: 4;
+		}
 
-	display: flex;
-	flex-direction: column;
-	flex: 2;
-
-	.mi-card-demo {
-		padding: 14px 0px;
-		padding-bottom: 0px;
-
-		display: flex;
-		flex: 1;
+		span {
+			margin-bottom: 8px;
+			padding-top: 8px;
+		}
 
 		i {
-			padding-right: 8px;
+			color: variables.$text;
+			font-size: 28px;
+
+			&:hover {
+				color: variables.$accent;
+
+				cursor: pointer;
+			}
+		}
+
+		.mi-card-demo {
+			padding: 14px 0px;
+			padding-bottom: 0px;
+
+			display: flex;
+			flex: 1;
+
+			i {
+				padding-right: 8px;
+			}
 		}
 	}
 }

@@ -7,8 +7,11 @@
 
 .mi-card-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .mi-card {
@@ -17,7 +20,10 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 0;
   color: #ffffff;
   background-image: #060606;
   border: 2px solid #252525;
@@ -43,7 +49,19 @@
   transition-timing-function: ease-in;
   transform: scale(2);
 }
-.mi-card h3 {
+.mi-card .mi-card-content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0;
+  flex: 2;
+}
+.mi-card .mi-card-content h3 {
+  width: 100%;
+  align-self: center;
   padding-top: 4px;
   padding-bottom: 14px;
   flex: 1;
@@ -53,35 +71,28 @@
   font-family: "Turret Road", sans-serif;
   font-size: 1.5rem;
 }
-.mi-card p {
+.mi-card .mi-card-content p {
   flex: 4;
 }
-.mi-card span {
+.mi-card .mi-card-content span {
   margin-bottom: 8px;
   padding-top: 8px;
 }
-.mi-card i {
+.mi-card .mi-card-content i {
   color: #ffffff;
   font-size: 28px;
 }
-.mi-card i:hover {
+.mi-card .mi-card-content i:hover {
   color: #939cb1;
   cursor: pointer;
 }
-
-.mi-card-content {
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-}
-.mi-card-content .mi-card-demo {
+.mi-card .mi-card-content .mi-card-demo {
   padding: 14px 0px;
   padding-bottom: 0px;
   display: flex;
   flex: 1;
 }
-.mi-card-content .mi-card-demo i {
+.mi-card .mi-card-content .mi-card-demo i {
   padding-right: 8px;
 }
 

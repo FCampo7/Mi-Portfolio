@@ -1,165 +1,128 @@
-:root {
-	--bg-color: #000000;
-	--bg-header: #374151;
-	--bg-soft: #060606;
-
-	--title: #ffffff;
-	--text: #ffffff;
-	--text-secondary: #000000;
-
-	--primary: #677eff;
-	--secondary: #ffffff;
-	--tertiary: #e3e3e3;
-
-	--accent: #939cb1;
-
-	--border-color: #252525;
-}
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Quicksand", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-	color: var(--text) !important;
-	background-color: var(--bg-color) !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
 }
 
 strong {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 em {
-	font-style: italic;
-	font-weight: 100;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .Turret-Road-h1 {
-	font-family: "Turret Road", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 800;
-	font-style: normal;
+  font-family: "Turret Road", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* ************
 *  *  Header  *
 *  ************/
-
 #header {
-	min-height: 50px;
-
-	background-color: var(--bg-color);
-	color: var(--text);
+  min-height: 50px;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .navbar-brand {
-	margin-left: 4px;
-
-	font-size: 24px;
-	font-weight: 800;
+  margin-left: 4px;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .nav-button {
-	padding: 8px;
-	height: 2.25rem;
-
-	color: var(--text);
-	text-decoration: none;
-	font-weight: 500;
+  padding: 8px;
+  height: 2.25rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
 }
-
 .nav-button:hover {
-	border-bottom: 3px solid var(--tertiary);
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .nav-active {
-	border-bottom: 3px solid var(--tertiary);
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .cv {
-	margin-top: 4px;
-	margin-right: 4px;
-	margin-bottom: 4px;
-	padding: 8px;
-
-	background-color: var(--bg-soft);
-	color: var(--text);
-	border: 1px solid var(--text);
-	border-radius: 4px;
-
-	cursor: pointer;
-
-	font-weight: 600;
-	text-decoration: none;
-	text-align: center;
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 8px;
+  background-color: #060606;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
 }
-
 .cv:hover {
-	background-color: var(--primary);
+  background-color: #677eff;
 }
 
 /* **********
 *  *  Main  *
 *  **********/
-
 #main {
-	margin: 20px;
-	padding: 20px;
-
-	width: 90vw;
-	min-height: calc(100vh - 50px - 150px);
-
-	justify-self: center;
-	text-align: justify;
-	text-justify: inter-character;
+  margin: 20px;
+  padding: 20px;
+  width: 90vw;
+  min-height: calc(100vh - 50px - 150px);
+  justify-self: center;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 .subtitulos {
-	padding: 8px;
-
-	justify-self: center;
-	text-align: center;
-
-	font-family: "Turret Road", sans-serif;
-	font-weight: 600;
-	font-size: 2rem;
+  padding: 8px;
+  justify-self: center;
+  text-align: center;
+  font-family: "Turret Road", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 /* **********
 *  * Footer *
 *  **********/
-
 #footer {
-	background-color: var(--bg-color);
-	color: var(--text);
-
-	height: 80px;
-
-	justify-items: center;
-	text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  height: 80px;
+  justify-items: center;
+  text-align: center;
 }
 
 .social {
-	background-color: var(--bg-color);
+  background-color: #000000;
 }
-
 .social a {
-	color: var(--text);
-	text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
-
 .social a:hover {
-	color: var(--accent);
+  color: #939cb1;
 }
-
 .social i {
-	padding: 4px;
-
-	font-size: 32px;
+  padding: 4px;
+  font-size: 32px;
 }
+
+/*# sourceMappingURL=style.css.map */

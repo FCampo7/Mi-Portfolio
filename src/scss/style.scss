@@ -1,0 +1,150 @@
+@use "variables";
+@use "mixins";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Quicksand", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	color: variables.$text !important;
+	background-color: variables.$bg-color !important;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+	font-weight: 100;
+}
+
+.Turret-Road-h1 {
+	font-family: "Turret Road", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+}
+
+/* ************
+*  *  Header  *
+*  ************/
+
+#header {
+	min-height: 50px;
+
+	background-color: variables.$bg-color;
+	color: variables.$text;
+}
+
+.navbar-brand {
+	margin-left: 4px;
+
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.nav-button {
+	padding: 8px;
+	height: 2.25rem;
+
+	color: variables.$text;
+	text-decoration: none;
+	font-weight: 500;
+
+	&:hover {
+		border-bottom: 3px solid variables.$tertiary;
+	}
+}
+
+.nav-active {
+	border-bottom: 3px solid variables.$tertiary;
+}
+
+.cv {
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 8px;
+
+	background-color: variables.$bg-soft;
+	color: variables.$text;
+	border: 1px solid variables.$text;
+	border-radius: 4px;
+
+	cursor: pointer;
+
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+
+	&:hover {
+		background-color: variables.$primary;
+	}
+}
+
+/* **********
+*  *  Main  *
+*  **********/
+
+#main {
+	margin: 20px;
+	padding: 20px;
+
+	width: 90vw;
+	min-height: calc(100vh - 50px - 150px);
+
+	justify-self: center;
+	text-align: justify;
+	text-justify: inter-character;
+}
+
+.subtitulos {
+	padding: 8px;
+
+	justify-self: center;
+	text-align: center;
+
+	font-family: "Turret Road", sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+/* **********
+*  * Footer *
+*  **********/
+
+#footer {
+	background-color: variables.$bg-color;
+	color: variables.$text;
+
+	height: 80px;
+
+	justify-items: center;
+	text-align: center;
+}
+
+.social {
+	background-color: variables.$bg-color;
+
+	a {
+		color: variables.$text;
+		text-decoration: none;
+
+		&:hover {
+			color: variables.$accent;
+		}
+	}
+
+	i {
+		padding: 4px;
+
+		font-size: 32px;
+	}
+}

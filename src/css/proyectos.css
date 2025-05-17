@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   gap: 0;
   color: #ffffff;
-  background-image: #060606;
+  background-color: #060606 !important;
   border: 2px solid #252525;
   border-radius: 24px;
 }
@@ -40,14 +40,8 @@
   min-height: 200px;
   flex: 1;
   align-self: center;
-  cursor: zoom-in;
   border: #252525 1px solid;
   border-radius: 20px;
-}
-.mi-card img:active {
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in;
-  transform: scale(2);
 }
 .mi-card .mi-card-content {
   padding: 14px;

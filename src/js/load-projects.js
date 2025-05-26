@@ -1,6 +1,6 @@
 onload = async function () {
 	await fetch(
-		"https://raw.githubusercontent.com/FCampo7/Mi-Portfolio/refs/heads/projects-feature/resources/proyectos.json"
+		"https://raw.githubusercontent.com/FCampo7/Mi-Portfolio/refs/heads/main/resources/proyectos.json"
 	)
 		.then((res) => {
 			if (!res.ok) {

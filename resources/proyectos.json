@@ -58,7 +58,7 @@
 		"imagen": "../resources/img/Proyectos/Countryinfo.png",
 		"alt": "Browser Extensions Manager demo",
 		"tecnologias": ["html5", "css3", "javascript"],
-		"descripcion": "Challenge de Frontend Mentor. Aplicación web que muestra información de países utilizando la API REST Countries. Permite buscar por nombre de país, filtrar por región y ver detalles de cada país. Aún no cuenta con cambio de tema.",
+		"descripcion": "Challenge de Frontend Mentor. Aplicación web que muestra información de países utilizando la API REST Countries. Permite buscar por nombre de país, filtrar por región y ver detalles de cada país.",
 		"links": {
 			"github": "https://github.com/FCampo7/countries",
 			"web": "https://countryinfo-seven.vercel.app"

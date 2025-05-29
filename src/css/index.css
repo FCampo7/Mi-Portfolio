@@ -19,15 +19,51 @@
   max-width: 800px;
 }
 .hero-content h1 {
+  justify-self: center;
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-size: 4rem;
   line-height: 1.2;
+  transform-origin: top left;
+  animation: hinge 4s ease-in-out 0.5s;
 }
 .hero-content p {
   color: #939cb1;
   font-size: 1.8rem;
   font-weight: 500;
+  animation: fadein 4.5s ease-in-out;
+}
+
+@keyframes hinge {
+  10%, 30% {
+    transform: rotate(70deg);
+    opacity: 0.5;
+  }
+  20%, 40% {
+    transform: rotate(55deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(600px) scale(0.2);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-1000px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: center;
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

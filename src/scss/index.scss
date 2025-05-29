@@ -32,19 +32,22 @@
 		font-size: 4rem;
 		line-height: 1.2;
 
-		transform-origin: top left;
-		animation: hinge 4s ease-in-out 0.5s;
+		animation: hinge 4s ease-in-out;
 	}
 
 	p {
 		color: variables.$accent;
 		font-size: 1.8rem;
 		font-weight: 500;
-		animation: fadein 4.5s ease-in-out;
+		animation: fadein 4s ease-in-out;
 	}
 }
 
 @keyframes hinge {
+	0% {
+		transform-origin: top left;
+		opacity: 0;
+	}
 	10%,
 	30% {
 		transform: rotate(70deg);
@@ -73,6 +76,15 @@
 @keyframes fadein {
 	0% {
 		opacity: 0;
+	}
+	25% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0.2;
 	}
 	100% {
 		opacity: 1;

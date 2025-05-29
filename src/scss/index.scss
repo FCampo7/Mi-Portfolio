@@ -1,5 +1,6 @@
 @use "mixins";
 @use "variables";
+@use "animations";
 
 /* **********
 *  *  Hero  *
@@ -26,7 +27,7 @@
 @media (min-width: 768px) {
 	.hero {
 		animation-duration: 10s;
-		background-size: 110%;
+		background-size: 110% 100%;
 	}
 }
 
@@ -48,65 +49,5 @@
 		font-size: 1.8rem;
 		font-weight: 500;
 		animation: fadein 4s ease-in-out;
-	}
-}
-
-@keyframes hinge {
-	0% {
-		transform-origin: top left;
-		opacity: 0;
-	}
-	10%,
-	30% {
-		transform: rotate(70deg);
-		opacity: 0.5;
-	}
-	20%,
-	40% {
-		transform: rotate(55deg);
-		opacity: 1;
-	}
-	50% {
-		transform: translateY(1000px) scale(0.2);
-		opacity: 0;
-	}
-	80% {
-		transform: translateY(-1000px) scale(0.5);
-		opacity: 0;
-	}
-	100% {
-		transform-origin: center;
-		transform: translateY(0px) scale(1);
-		opacity: 1;
-	}
-}
-
-@keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	25% {
-		opacity: 0.2;
-	}
-	50% {
-		opacity: 0;
-	}
-	75% {
-		opacity: 0.2;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
 	}
 }

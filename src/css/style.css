@@ -1,3 +1,92 @@
+@keyframes rubberband {
+  0% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+  }
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+@keyframes mi-card-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes hinge {
+  0% {
+    transform-origin: top left;
+    opacity: 0;
+  }
+  10%, 30% {
+    transform: rotate(70deg);
+    opacity: 0.5;
+  }
+  20%, 40% {
+    transform: rotate(55deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(1000px) scale(0.2);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-1000px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: center;
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -128,30 +217,6 @@ em {
 
 i:hover {
   animation: rubberband 0.5s ease-in-out;
-}
-
-@keyframes rubberband {
-  0% {
-    transform: scaleX(1);
-  }
-  40% {
-    transform: scaleX(1.12) scaleY(0.75);
-  }
-  55% {
-    transform: scaleX(0.85) scaleY(1);
-  }
-  65% {
-    transform: scaleX(1.09) scaleY(0.85);
-  }
-  75% {
-    transform: scaleX(0.9) scaleY(1);
-  }
-  90% {
-    transform: scaleX(1.05) scaleY(0.95);
-  }
-  100% {
-    transform: scaleX(1) scaleY(1);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

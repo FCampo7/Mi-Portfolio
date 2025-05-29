@@ -1,45 +1,37 @@
-/* **********
-*  *  Hero  *
-*  **********/
-.hero {
-  padding: 0 1rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 0;
-  text-align: center;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #060606 80%, #000000 100%), url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
-  background-size: cover;
-  animation: gradient 20s ease-in-out infinite;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    animation-duration: 10s;
-    background-size: 110%;
+@keyframes rubberband {
+  0% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+  }
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
   }
 }
-.hero-content {
-  max-width: 800px;
+@keyframes mi-card-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-.hero-content h1 {
-  justify-self: center;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-  font-size: 4rem;
-  line-height: 1.2;
-  animation: hinge 4s ease-in-out;
-}
-.hero-content p {
-  color: #939cb1;
-  font-size: 1.8rem;
-  font-weight: 500;
-  animation: fadein 4s ease-in-out;
-}
-
 @keyframes hinge {
   0% {
     transform-origin: top left;
@@ -94,6 +86,47 @@
   100% {
     background-position: 0% 50%;
   }
+}
+/* **********
+*  *  Hero  *
+*  **********/
+.hero {
+  padding: 0 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  text-align: center;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #060606 80%, #000000 100%), url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
+  background-size: cover;
+  animation: gradient 20s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    animation-duration: 10s;
+    background-size: 110% 100%;
+  }
+}
+.hero-content {
+  max-width: 800px;
+}
+.hero-content h1 {
+  justify-self: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.2;
+  animation: hinge 4s ease-in-out;
+}
+.hero-content p {
+  color: #939cb1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  animation: fadein 4s ease-in-out;
 }
 
 /*# sourceMappingURL=index.css.map */

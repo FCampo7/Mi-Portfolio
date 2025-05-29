@@ -12,10 +12,16 @@
   gap: 0;
   text-align: center;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #060606 80%, #000000 100%), url("https://fcampo7.github.io/Mi-Portfolio/resources/img/Hero.jpg");
-  background-size: 110%;
-  animation: gradient 12s ease-in-out infinite;
+  background-size: cover;
+  animation: gradient 20s ease-in-out infinite;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    animation-duration: 10s;
+    background-size: 110%;
+  }
+}
 .hero-content {
   max-width: 800px;
 }
@@ -80,15 +86,12 @@
 }
 @keyframes gradient {
   0% {
-    opacity: 0.5;
     background-position: 0% 50%;
   }
   50% {
-    opacity: 1;
     background-position: 100% 50%;
   }
   100% {
-    opacity: 0.5;
     background-position: 0% 50%;
   }
 }

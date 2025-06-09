@@ -1,25 +1,5 @@
-onload = async function () {
-	await fetch(
-		"https://raw.githubusercontent.com/FCampo7/Mi-Portfolio/refs/heads/main/resources/proyectos.json"
-	)
-		.then((res) => {
-			if (!res.ok) {
-				throw new Error("Network response was not ok.");
-			}
-			return res.json();
-		})
-		.then((proyectos) => {
-			const container = document.getElementById("mi-card-container");
-			proyectos.forEach((proyecto, index) => {
-				const card = document.createElement("article");
-				card.className = "mi-card";
-				card.setAttribute(
-					"data-aos",
-					index % 2 === 0 ? "fade-right" : "fade-left"
-				);
-				card.setAttribute("data-aos-duration", "2000");
-
-				card.innerHTML = `
+function fillCard(proyecto) {
+	let card = `
           <img src="${proyecto.imagen}" alt="${proyecto.alt}" />
           <div class="mi-card-content">
             <h3>${proyecto.titulo}</h3>
@@ -48,6 +28,31 @@ onload = async function () {
             </div>
           </div>
         `;
+	return card;
+}
+
+onload = async function () {
+	await fetch(
+		"https://raw.githubusercontent.com/FCampo7/Mi-Portfolio/refs/heads/main/resources/proyectos.json"
+	)
+		.then((res) => {
+			if (!res.ok) {
+				throw new Error("Network response was not ok.");
+			}
+			return res.json();
+		})
+		.then((proyectos) => {
+			const container = document.getElementById("mi-card-container");
+			proyectos.forEach((proyecto, index) => {
+				const card = document.createElement("article");
+				card.className = "mi-card";
+				card.setAttribute(
+					"data-aos",
+					index % 2 === 0 ? "fade-right" : "fade-left"
+				);
+				card.setAttribute("data-aos-duration", "2000");
+
+				card.innerHTML = fillCard(proyecto);
 				container.appendChild(card);
 			});
 		});
